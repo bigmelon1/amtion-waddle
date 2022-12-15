@@ -1,6 +1,10 @@
 :root {
     --bigfont: 35px;
     --explainfont: 25px;
+    --smallphont: 15px;
+
+    --colorbe: beige;
+    --colorbl: black;
   }
 
 
@@ -13,11 +17,15 @@ body{
 div{
     box-sizing: border-box !important;
 }
+button{
+    border:none;
+}
+
 
 .nav{
     width: auto;
     height: 70px;
-    background-color: black;
+    background-color: var(--colorbl);
     margin-bottom: 70px;
 }
 
@@ -30,9 +38,9 @@ div{
     min-width: 100px;
     max-width: 800px;
     height: 500px;
-    border: 3px solid black;
+    border: 3px solid var(--colorbe);
     border-radius: 10px;
-    background-color: beige;
+    background-color: var(--colorbe);
     display: flex;
     flex-direction: column;
 
@@ -69,8 +77,40 @@ div{
     margin: 0;
 }
 .textarea{
-    width: 120%;
+    width: 150%;
     height: 300px;
     border: none;
     resize: none;
+}
+.explation_but_container{
+    width: 100%;
+    height: 50px;
+}
+.explation_but{
+    margin-top: 10px;
+    background-color: var(--colorbl);
+    border-radius: 10%;
+    width: 70px;
+    height: 40px;
+}
+.explation_but > p{
+    font-size: var(--smallphont);
+    color: var(--colorbe);
+    margin-bottom: 0;
+    margin-top: 4.5px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 750px){
+    .textarea{
+        width: 90%;
+    }
 }
