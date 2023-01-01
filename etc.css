@@ -17,9 +17,33 @@ body{
 div{
     box-sizing: border-box !important;
 }
-button{
+.BUTbn{
     border:none;
 }
+
+
+.BGC-wh{
+    background-color: white;
+}
+.BGC-bl{
+    background-color: var(--colorbl);
+}
+.BGC-be{
+    background-color: var(--colorbe);
+}
+.FSs{
+    font-size: var(--smallphont);
+}
+.FSm{
+    font-size: var(--explainfont);
+}
+.FSb{
+    font-size: var(--bigfont);
+}
+.MG0{
+    margin: 0;
+}
+
 
 
 .nav{
@@ -33,74 +57,90 @@ button{
     display: flex;
     justify-content: center;
 }
-.innercenter{
-    width: 100%;
+
+
+
+
+
+
+.container{
+    width: 80%;
+    height: 570px;
     min-width: 100px;
     max-width: 800px;
-    height: 500px;
     border: 3px solid var(--colorbe);
     border-radius: 10px;
     background-color: var(--colorbe);
     display: flex;
     flex-direction: column;
-
 }
-
-.explation{
-    padding-left: 5%;
-    width : 100%;
-}
-.explation_innertitle{
-    width: auto;
-    height: 50px;
-
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.explation_innertitle > h1{
-    margin: 0;
-    font-size: var(--bigfont);
-    font-weight: bold;
-}
-
-.explation_Ptextarea{
+.container_top{
     width: 100%;
-    max-width: 500px;
     height: auto;
-    display: flex;
     padding-left: 5%;
-    flex-direction: column;
 }
-.explation_Ptextarea > p{
+.menucontainer{
+    margin-top: 3%;
     width: 100%;
     height: 50px;
-    margin: 0;
+    padding-left: 5%;
 }
-.textarea{
-    width: 150%;
-    height: 300px;
-    border: none;
-    resize: none;
+.buttondiv{
+    width: auto;
+    height: auto;
 }
-.explation_but_container{
-    width: 100%;
-    height: 50px;
-}
-.explation_but{
-    margin-top: 10px;
-    background-color: var(--colorbl);
+.choicebutton{
     border-radius: 10%;
     width: 70px;
     height: 40px;
 }
-.explation_but > p{
-    font-size: var(--smallphont);
-    color: var(--colorbe);
-    margin-bottom: 0;
-    margin-top: 4.5px;
-    font-weight: bold;
+.choiceworks{
+    width: auto;
+    height: auto;
+    position: relative;
+}
+.works_container{
+    text-align: center;
+    width: 100px;
+    overflow:auto;
+    margin-top: 5px;
+}
+.works{
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.works p{
+    margin: 0;
 }
 
+.textcontainer{
+    margin-top: 3%;
+    width: 100%;
+    height: auto;
+    padding-left: 5%;
+}
+.textarea2{
+    width: 90%;
+    height: 300px;
+    border: none;
+    resize: none;
+}
+.container_footer{
+    width: 100%;
+    padding-left: 5%;
+    height: 50px;
+    margin-top: 2%;
+}
+.footer_button{
+    border-radius: 10%;
+    width: 70px;
+    height: 40px;
+}
+.footer_button > p{
+    color: var(--colorbe);
+    font-weight: bold;
+}
 
 
 

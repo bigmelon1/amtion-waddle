@@ -6,33 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="etc.css">
-    
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
     <nav class="nav"></nav>
+
     <div class="center">
-        <div class="innercenter">
-            <div class="explation">
-                <div class="explation_innertitle">
-                    <h1>버그 신고</h1>
-                </div>
+        <div class="container">
+            <div class="container_top">
+                <h1 class="FSb MG0" >버그 신고</h1>
+                <p class="FSe MG0">작품에서 발견한 버그를 적어주세요. <br>빠르게 해결할게요.</p>
             </div>
-            <div class="explation_Ptextarea">
-                <p>작품에서 발견한 버그를 적어주세요. <br>빠르게 해결할게요.</p>
-                <form action="#">
-                    <textarea class="textarea" cols="30" rows="10" rows={1}>자세하게 적어주시면 더욱 빠르게 버그를 고칠 수 있어요!</textarea>
-                </form>
-                <div class="explation_but_container">
-                    <form action="#">
-                        <button type="submit" class="explation_but">
-                            <p> 전송</p>
-                        </button>
-                    </form>
+            <form action="#">
+                <div class="menucontainer">
+                    <div class="buttonPdiv" x-data="{ open: false }">
+                        <button class="choicebutton BGC-be" x-on:click="open = !open">작품</button>
+                        <div class="choiceworks" x-show="open">
+                            <div class="works_container BGC-wh">
+                                <div class="works">
+                                    <p>상어피하기</p>
+                                </div>
+                                <div class="works">
+                                    <p>상어피하기</p>
+                                </div>
+                                <div class="works">
+                                    <p>상어피하기</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <div class="textcontainer">
+                    <textarea cols="30" rows="10" placeholder="자세하게 적어주시면 더욱 빠르게 버그를 고칠 수 있어요!" class="textarea2"></textarea>
+                </div>
+                <div class="container_footer">
+                    <button type="submit" class="footer_button BGC-bl BUTbn">
+                        <p class="MG0">전송</p>
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
-    
+
 
 </body>
 </html>
