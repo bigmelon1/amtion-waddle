@@ -79,39 +79,25 @@ div{
     height: auto;
     padding-left: 5%;
 }
+
 .menucontainer{
     margin-top: 3%;
     width: 100%;
-    height: 50px;
+    height: auto;
     padding-left: 5%;
 }
-.buttondiv{
+.menubutton{
     width: auto;
-    height: auto;
-}
-.choicebutton{
-    border-radius: 10%;
-    width: 70px;
     height: 40px;
+    border-radius: 10px;
 }
-.choiceworks{
-    width: auto;
-    height: auto;
-    position: relative;
-}
-.works_container{
-    text-align: center;
+.workscontainer{
     width: 100px;
-    overflow:auto;
-    margin-top: 5px;
-}
-.works{
-    width: 100%;
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
-.works p{
-    margin: 0;
+    height: auto;
+    margin-top: 2%;
+    border-radius: 10px;
+    position: relative;
+    background-color: aqua;
 }
 
 .textcontainer{
